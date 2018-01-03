@@ -1,5 +1,7 @@
 .page-header {
 	padding: 35px 0;
+	position: relative;
+	z-index: 15;
 }
 .page-header__block {
 	display: flex;
@@ -8,9 +10,7 @@
 	 -webkit-align-items: center;
 	         align-items: center;
 }
-.page-header__middle-block {
 
-}
 .page-header__text {
 	float: left;
 	display: inline-block;
@@ -92,7 +92,14 @@
 .page-header__mobile-btn--1 {
 	right: 0px;
 }
-.page-header__mobile-btn--2 {
+.page-header__mobile-btn--2,
+.page-header__mobile--close {
 	top: -15px;
+	right: 0;
+}
+.page-header__mobile--close  {
+	display: none;
+	font-size: 30px;
+	background: #FFF;
 }
 }
